@@ -23,6 +23,51 @@ La copie d'écran suivante donne un aperçu de la page d'accueil de l'usager :
 
 ![](./images/enu-frontend.png)
 
+## Modèle conceptuel
+
+### Glossaire
+
+**ENU:** Espace Numérique de l’Usager.
+
+**Usager (personne physique):** citoyen amené à utiliser l’ENU dans le cadre de ses démarches administratives auprès de l’Etat de Genève.
+
+**Compte AEL (Administration en ligne) d’un usager (personne physique):** compte attribué par l’Etat de Genève à chacun des citoyens le demandant, pour réaliser des démarches en ligne. Il est unique et personnel.
+
+**Prestation:** service en ligne fourni par l’Etat de Genève, incarné par un formulaire e-démarches.
+
+**Demande:** instance d’une prestation.
+
+**Récapitulatif (ou recap):** document issu du dépôt de la demande (formulaire rempli par l'usager).
+
+**Justificatif:** document téléversé par l'usager lors du dépôt de sa demande.
+
+**Statut:** état ou situation de fait d’une demande.
+
+**Suggestion de prestation:** action suggérée à l’usager pour progresser dans sa gestion administrative globale. Elle est créée par un SI métier et correspond à une mise en avant d’une prestation de l’État de Genève. Le SI métier a potentiellement identifié cet usager comme étant susceptible d'effectuer cette démarche (ex : rectificatif de l'impôt à la source pour une personne ayant utilisé cette prestation l'année précédente, ou demande de renseignements non liée à une démarche en cours).
+
+**Catégorie:** libellé permettant d’identifier le service administratif associé, expéditeur d'un message ou d'un courrier (ex: Fiscalité, Population…).
+
+**Service administratif:** unité organisationnelle responsable des prestations (SI métier).
+
+**Document constitutif d'une demande:** support numérique d’une information transmis à l’usager sur son espace et qui peut être soit:
+
+* un récapitulatif de la demande transmise par l'usager (document unique)
+* un justificatif transmis par l'usager dans le cadre de sa demande (ex : passeport)
+
+**Courrier:** ensemble de documents (constitutifs d'un courrier) transmis à un usager. Le courrier est transmis de l'administration vers l'usager. Il contient par exemple : une décision, une autorisation, une lettre, un livret, une page d'en-tête.
+
+**Document constitutif d'un courrier:** support numérique d’une information transmis à l’usager sur son espace et faisant partie d'un courrier.
+
+**Message:** information transmise par un SI métier à un usager ou information transmise par un usager à un SI métier, via la rubrique «Ma Messagerie».
+
+**Notification:** message envoyé par email ou par SMS à un usager, pour l’informer d’un évènement qui s’est produit sur son espace numérique.
+
+__*:__ propriété obligatoire
+
+### Diagramme entités-association
+
+![](./images/Modèle_final.png)
+
 ## Présentation technique
 
 ![](./images/enu-technique.png)
